@@ -1,0 +1,23 @@
+.title_area {
+    background:orange;
+    height:100vh;
+
+    /* 親要素にposition:relative;を指定 */
+    position:relative;
+}
+.title_content {
+    /* 子要素にposition:absolute;を指定 */
+    position:absolute;
+
+    /* 配置は50%、50% */
+    top:50%;
+    left:50%;
+
+    /* 要素の大きさの縦横50%ずつをマイナスさせ、中央に配置させる */
+    transform:translate(-50%,-50%);
+
+    /* より中央寄せらしくさせるために文字列を中央揃えに */
+    text-align:center;
+    
+}
+
